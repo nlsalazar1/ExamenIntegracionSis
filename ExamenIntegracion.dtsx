@@ -1,0 +1,1266 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/9/2024 8:05:13 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LEO"
+  DTS:CreatorName="LEO\LEO10"
+  DTS:DTSID="{A993CAA7-7B28-4022-AD19-3847CAAB5907}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5467.0"
+  DTS:LocaleID="3082"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="16"
+  DTS:VersionGUID="{58B1F406-43C5-493D-8348-AC89E477DD23}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones de archivos planos]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{BDE7D046-28CA-4A22-9E55-9DC52B79AB1C}"
+      DTS:ObjectName="Administrador de conexiones de archivos planos">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="3082"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\LEO10\Documents\UDLA\Integracion de Sistemas\Gestion Contable.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IdCont"
+              DTS:DTSID="{90F57711-D475-4B6F-AB32-ADD4FFFCEE3B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="idCli"
+              DTS:DTSID="{40F9543B-7E0A-4AD8-8339-13A7BDAB2B4F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="MontoCuenta"
+              DTS:DTSID="{3ACDB027-9B65-436D-A565-B6EFD414DD14}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="fecha"
+              DTS:DTSID="{B1F71AEF-EFF0-4B41-92FB-8E51ACDD97BA}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Administrador de conexiones de archivos planos 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{AB227A6A-C8E2-4940-882E-75D305C0A8B4}"
+      DTS:ObjectName="Administrador de conexiones de archivos planos 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="3082"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\LEO10\Documents\UDLA\Integracion de Sistemas\Examen 1\GestionClientes.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="IdCli"
+              DTS:DTSID="{92D793AE-C1FF-4AA6-B07D-EF936E4E8B84}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="nombre"
+              DTS:DTSID="{F94ACEEA-FDCD-458B-BB0E-AA87BA52369C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="correo"
+              DTS:DTSID="{2CD56C9C-8313-4046-8980-A5368BFAF036}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="telefono"
+              DTS:DTSID="{584D6991-ADB3-4FF4-8C95-FC84D29D3942}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="edad"
+              DTS:DTSID="{187A432A-38A3-43CE-8383-1D7B5F4D8459}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="residencia"
+              DTS:DTSID="{6988D14D-EB0A-45E3-8FA1-1F9EC90C97D5}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LEO\SQLEXPRESS.GestorCliente]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{A863C6F9-310F-4387-B4B8-9037278531F7}"
+      DTS:ObjectName="LEO\SQLEXPRESS.GestorCliente">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=LEO\SQLEXPRESS;Initial Catalog=GestorCliente;Integrated Security=True;Application Name=SSIS-Package-{A863C6F9-310F-4387-B4B8-9037278531F7}LEO\SQLEXPRESS.GestorCliente;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LEO\SQLEXPRESS.GestorContable]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{72980D49-9954-4643-A9E4-E09CBB05ABD6}"
+      DTS:ObjectName="LEO\SQLEXPRESS.GestorContable">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=LEO\SQLEXPRESS;Initial Catalog=GestorContable;Integrated Security=True;Application Name=SSIS-Package-{72980D49-9954-4643-A9E4-E09CBB05ABD6}LEO\SQLEXPRESS.GestorContable;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[LEO\SQLEXPRESS.SistemaCajita]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{09E6F8F1-AA39-48E2-835B-C954EF239EC3}"
+      DTS:ObjectName="LEO\SQLEXPRESS.SistemaCajita">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=LEO\SQLEXPRESS;Initial Catalog=SistemaCajita;Integrated Security=True;Application Name=SSIS-Package-{09E6F8F1-AA39-48E2-835B-C954EF239EC3}LEO\SQLEXPRESS.SistemaCajita;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Tarea Flujo de datos"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarea Flujo de datos"
+      DTS:DTSID="{C18AB2CF-7BBB-4DCB-AB50-9669E21B5B37}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Tarea Flujo de datos"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Transferir Archivo Contable a BD"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tarea Flujo de datos"
+      DTS:DTSID="{EE0BEA02-29C0-49E9-B115-6251923D98A5}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Transferir Archivo Contable a BD"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Transferir Archivo Contable a BD\Contact Center"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+              description="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server."
+              name="Contact Center"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Especifica la instrucción SQL utilizada por el componente para extraer datos."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si se debe permitir que columnas externas que no sean de cadenas se conviertan implícitamente en cadenas en las columnas de salida."
+                  name="AllowImplicitStringConversion">true</property>
+                <property
+                  dataType="System.String"
+                  description="Nombre de la tabla de la base de datos de origen."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especificar el modo de recuperar información de columnas externas"
+                  name="AccessMode"
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">2</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.DataReaderSourceAdapter</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Transferir Archivo Contable a BD\Contact Center.Connections[IDbConnection]"
+                  description="Administrador de conexiones administrado"
+                  name="IDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Transferir Archivo Contable a BD\Contact Center.Outputs[Salida de origen de ADO NET]"
+                  name="Salida de origen de ADO NET">
+                  <externalMetadataColumns
+                    isUsed="True" />
+                </output>
+                <output
+                  refId="Package\Transferir Archivo Contable a BD\Contact Center.Outputs[Salida de error de origen de ADO NET]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de ADO NET">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Contact Center.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Transferir Archivo Contable a BD\Contact Center.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Contact Center.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Transferir Archivo Contable a BD\Contact Center.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Transferir Archivo Contable a BD\Guarda Datos en BD"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;2"
+              description="Carga datos en una base de datos compatible con ADO.NET que use una vista o tabla de base de datos. Se cargan datos en una tabla nueva o existente. Por ejemplo, se usa un proveedor ADO.NET para ODBC para cargar datos en un destino ODBC."
+              name="Guarda Datos en BD"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Nombre de la tabla de la base de datos de destino."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."GestionContable"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Especifique el número de filas por lote. El valor predeterminado es 0, que utiliza el mismo tamaño que el búfer interno de SSIS. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica si se debe usar la interfaz SqlBulkCopy para mejorar el rendimiento de las operaciones de inserción masiva. No todos los proveedores admiten esta interfaz."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Transferir Archivo Contable a BD\Guarda Datos en BD.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LEO\SQLEXPRESS.SistemaCajita]"
+                  connectionManagerRefId="Package.ConnectionManagers[LEO\SQLEXPRESS.SistemaCajita]"
+                  description="Administrador de conexiones administrado"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Transferir Archivo Contable a BD\Guarda Datos en BD.Inputs[Entrada de destino de ADO NET]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrada de destino de ADO NET">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Guarda Datos en BD.Inputs[Entrada de destino de ADO NET].Columns[IdCont]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="IdCont"
+                      externalMetadataColumnId="Package\Transferir Archivo Contable a BD\Guarda Datos en BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[IdCont]"
+                      lineageId="Package\Transferir Archivo Contable a BD\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[IdCont]" />
+                    <inputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Guarda Datos en BD.Inputs[Entrada de destino de ADO NET].Columns[idCli]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="idCli"
+                      externalMetadataColumnId="Package\Transferir Archivo Contable a BD\Guarda Datos en BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[IdCli]"
+                      lineageId="Package\Transferir Archivo Contable a BD\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[idCli]" />
+                    <inputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Guarda Datos en BD.Inputs[Entrada de destino de ADO NET].Columns[MontoCuenta]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="MontoCuenta"
+                      externalMetadataColumnId="Package\Transferir Archivo Contable a BD\Guarda Datos en BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[MontoCuenta]"
+                      lineageId="Package\Transferir Archivo Contable a BD\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[MontoCuenta]" />
+                    <inputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Guarda Datos en BD.Inputs[Entrada de destino de ADO NET].Columns[fecha]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="fecha"
+                      externalMetadataColumnId="Package\Transferir Archivo Contable a BD\Guarda Datos en BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Fecha]"
+                      lineageId="Package\Transferir Archivo Contable a BD\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[fecha]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Transferir Archivo Contable a BD\Guarda Datos en BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[IdCont]"
+                      dataType="wstr"
+                      length="20"
+                      name="IdCont" />
+                    <externalMetadataColumn
+                      refId="Package\Transferir Archivo Contable a BD\Guarda Datos en BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[IdCli]"
+                      dataType="wstr"
+                      length="50"
+                      name="IdCli" />
+                    <externalMetadataColumn
+                      refId="Package\Transferir Archivo Contable a BD\Guarda Datos en BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[MontoCuenta]"
+                      dataType="i4"
+                      name="MontoCuenta" />
+                    <externalMetadataColumn
+                      refId="Package\Transferir Archivo Contable a BD\Guarda Datos en BD.Inputs[Entrada de destino de ADO NET].ExternalColumns[Fecha]"
+                      dataType="wstr"
+                      length="50"
+                      name="Fecha" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Transferir Archivo Contable a BD\Guarda Datos en BD.Outputs[Salida de error de destino de ADO NET]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Salida de error de destino de ADO NET"
+                  synchronousInputId="Package\Transferir Archivo Contable a BD\Guarda Datos en BD.Inputs[Entrada de destino de ADO NET]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Guarda Datos en BD.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Transferir Archivo Contable a BD\Guarda Datos en BD.Outputs[Salida de error de destino de ADO NET].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Guarda Datos en BD.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Transferir Archivo Contable a BD\Guarda Datos en BD.Outputs[Salida de error de destino de ADO NET].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Transferir Archivo Contable a BD\Origen BD Clientes"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;4"
+              description="Consume datos de SQL Server, OLE DB, ODBC u Oracle mediante el correspondiente proveedor de datos de .NET Framework. Se usa una instrucción Transact-SQL para definir el conjunto de resultados. Por ejemplo, se extraen datos de SQL Server con el proveedor de datos de .NET Framework para SQL Server."
+              name="Origen BD Clientes"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Especifica la instrucción SQL utilizada por el componente para extraer datos."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT IdCli, nombre, correo, telefono, edad, residencia
+FROM     Clientes</property>
+                <property
+                  dataType="System.Int32"
+                  description="Número de segundos antes de que se agote el tiempo de espera de un comando. Un valor de 0 indica un tiempo de espera infinito."
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indica si se debe permitir que columnas externas que no sean de cadenas se conviertan implícitamente en cadenas en las columnas de salida."
+                  name="AllowImplicitStringConversion">true</property>
+                <property
+                  dataType="System.String"
+                  description="Nombre de la tabla de la base de datos de origen."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Especificar el modo de recuperar información de columnas externas"
+                  name="AccessMode"
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">2</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.DataReaderSourceAdapter</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[LEO\SQLEXPRESS.GestorCliente]"
+                  connectionManagerRefId="Package.ConnectionManagers[LEO\SQLEXPRESS.GestorCliente]"
+                  description="Administrador de conexiones administrado"
+                  name="IDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de origen de ADO NET]"
+                  name="Salida de origen de ADO NET">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de origen de ADO NET].Columns[IdCli]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de origen de ADO NET].ExternalColumns[IdCli]"
+                      length="20"
+                      lineageId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de origen de ADO NET].Columns[IdCli]"
+                      name="IdCli"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de origen de ADO NET].Columns[nombre]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de origen de ADO NET].ExternalColumns[nombre]"
+                      length="255"
+                      lineageId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de origen de ADO NET].Columns[nombre]"
+                      name="nombre"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de origen de ADO NET].Columns[correo]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de origen de ADO NET].ExternalColumns[correo]"
+                      length="255"
+                      lineageId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de origen de ADO NET].Columns[correo]"
+                      name="correo"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de origen de ADO NET].Columns[telefono]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de origen de ADO NET].ExternalColumns[telefono]"
+                      length="20"
+                      lineageId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de origen de ADO NET].Columns[telefono]"
+                      name="telefono"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de origen de ADO NET].Columns[edad]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de origen de ADO NET].ExternalColumns[edad]"
+                      lineageId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de origen de ADO NET].Columns[edad]"
+                      name="edad"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de origen de ADO NET].Columns[residencia]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de origen de ADO NET].ExternalColumns[residencia]"
+                      length="255"
+                      lineageId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de origen de ADO NET].Columns[residencia]"
+                      name="residencia"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de origen de ADO NET].ExternalColumns[IdCli]"
+                      dataType="wstr"
+                      length="20"
+                      name="IdCli" />
+                    <externalMetadataColumn
+                      refId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de origen de ADO NET].ExternalColumns[nombre]"
+                      dataType="wstr"
+                      length="255"
+                      name="nombre" />
+                    <externalMetadataColumn
+                      refId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de origen de ADO NET].ExternalColumns[correo]"
+                      dataType="wstr"
+                      length="255"
+                      name="correo" />
+                    <externalMetadataColumn
+                      refId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de origen de ADO NET].ExternalColumns[telefono]"
+                      dataType="wstr"
+                      length="20"
+                      name="telefono" />
+                    <externalMetadataColumn
+                      refId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de origen de ADO NET].ExternalColumns[edad]"
+                      dataType="i4"
+                      name="edad" />
+                    <externalMetadataColumn
+                      refId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de origen de ADO NET].ExternalColumns[residencia]"
+                      dataType="wstr"
+                      length="255"
+                      name="residencia" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de error de origen de ADO NET]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de ADO NET">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de error de origen de ADO NET].Columns[IdCli]"
+                      dataType="wstr"
+                      length="20"
+                      lineageId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de error de origen de ADO NET].Columns[IdCli]"
+                      name="IdCli" />
+                    <outputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de error de origen de ADO NET].Columns[nombre]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de error de origen de ADO NET].Columns[nombre]"
+                      name="nombre" />
+                    <outputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de error de origen de ADO NET].Columns[correo]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de error de origen de ADO NET].Columns[correo]"
+                      name="correo" />
+                    <outputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de error de origen de ADO NET].Columns[telefono]"
+                      dataType="wstr"
+                      length="20"
+                      lineageId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de error de origen de ADO NET].Columns[telefono]"
+                      name="telefono" />
+                    <outputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de error de origen de ADO NET].Columns[edad]"
+                      dataType="i4"
+                      lineageId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de error de origen de ADO NET].Columns[edad]"
+                      name="edad" />
+                    <outputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de error de origen de ADO NET].Columns[residencia]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de error de origen de ADO NET].Columns[residencia]"
+                      name="residencia" />
+                    <outputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de error de origen de ADO NET].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de error de origen de ADO NET].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Transferir Archivo Contable a BD\Origen de archivo plano"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Origen de archivo plano;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+              description="Origen de archivo plano"
+              localeId="3082"
+              name="Origen de archivo plano"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Especifica si las columnas de longitud cero se tratan como NULL."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Especifica el nombre de una columna de salida que contiene el nombre de archivo. Si no se especifica ningún nombre, no se genera ninguna columna de salida con el nombre de archivo."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Transferir Archivo Contable a BD\Origen de archivo plano.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Administrador de conexiones de archivos planos]"
+                  connectionManagerRefId="Package.ConnectionManagers[Administrador de conexiones de archivos planos]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Transferir Archivo Contable a BD\Origen de archivo plano.Outputs[Salida de origen de archivo plano]"
+                  name="Salida de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[IdCont]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Transferir Archivo Contable a BD\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[IdCont]"
+                      length="50"
+                      lineageId="Package\Transferir Archivo Contable a BD\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[IdCont]"
+                      name="IdCont"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[idCli]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Transferir Archivo Contable a BD\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[idCli]"
+                      length="50"
+                      lineageId="Package\Transferir Archivo Contable a BD\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[idCli]"
+                      name="idCli"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[MontoCuenta]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Transferir Archivo Contable a BD\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[MontoCuenta]"
+                      length="50"
+                      lineageId="Package\Transferir Archivo Contable a BD\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[MontoCuenta]"
+                      name="MontoCuenta"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[fecha]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversión"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Transferir Archivo Contable a BD\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[fecha]"
+                      length="50"
+                      lineageId="Package\Transferir Archivo Contable a BD\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[fecha]"
+                      name="fecha"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si la columna usa las rutinas de análisis más rápidas independientes de la configuración regional."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indica si los datos están en formato binario."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Transferir Archivo Contable a BD\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[IdCont]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="IdCont" />
+                    <externalMetadataColumn
+                      refId="Package\Transferir Archivo Contable a BD\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[idCli]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="idCli" />
+                    <externalMetadataColumn
+                      refId="Package\Transferir Archivo Contable a BD\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[MontoCuenta]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="MontoCuenta" />
+                    <externalMetadataColumn
+                      refId="Package\Transferir Archivo Contable a BD\Origen de archivo plano.Outputs[Salida de origen de archivo plano].ExternalColumns[fecha]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="fecha" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Transferir Archivo Contable a BD\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano]"
+                  isErrorOut="true"
+                  name="Salida de error de origen de archivo plano">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Columna de salida de error de origen de archivo plano"
+                      lineageId="Package\Transferir Archivo Contable a BD\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[Columna de salida de error de origen de archivo plano]"
+                      name="Columna de salida de error de origen de archivo plano" />
+                    <outputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Transferir Archivo Contable a BD\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Transferir Archivo Contable a BD\Origen de archivo plano.Outputs[Salida de error de origen de archivo plano].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Transferir Archivo Contable a BD\Unión de todo"
+              componentClassID="Microsoft.UnionAll"
+              contactInfo="Unión de todo;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Todos los derechos reservados; http://www.microsoft.com/sql/support;1"
+              description="Combina las filas de varios flujos de datos sin ordenarlos. Por ejemplo, devuelve filas a un flujo de datos después de corregir los errores. Si el orden es importante, se recomienda usar la transformación Mezclar."
+              name="Unión de todo"
+              version="1">
+              <inputs>
+                <input
+                  refId="Package\Transferir Archivo Contable a BD\Unión de todo.Inputs[Entrada de Unión de todo 1]"
+                  name="Entrada de Unión de todo 1">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Unión de todo.Inputs[Entrada de Unión de todo 1].Columns[IdCli]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="IdCli"
+                      lineageId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de origen de ADO NET].Columns[IdCli]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Transferir Archivo Contable a BD\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[IdCli]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Unión de todo.Inputs[Entrada de Unión de todo 1].Columns[nombre]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="nombre"
+                      lineageId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de origen de ADO NET].Columns[nombre]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Transferir Archivo Contable a BD\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[nombre]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Unión de todo.Inputs[Entrada de Unión de todo 1].Columns[correo]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="correo"
+                      lineageId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de origen de ADO NET].Columns[correo]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Transferir Archivo Contable a BD\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[correo]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Unión de todo.Inputs[Entrada de Unión de todo 1].Columns[telefono]"
+                      cachedDataType="wstr"
+                      cachedLength="20"
+                      cachedName="telefono"
+                      lineageId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de origen de ADO NET].Columns[telefono]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Transferir Archivo Contable a BD\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[telefono]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Unión de todo.Inputs[Entrada de Unión de todo 1].Columns[edad]"
+                      cachedDataType="i4"
+                      cachedName="edad"
+                      lineageId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de origen de ADO NET].Columns[edad]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Transferir Archivo Contable a BD\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[edad]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Unión de todo.Inputs[Entrada de Unión de todo 1].Columns[residencia]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="residencia"
+                      lineageId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de origen de ADO NET].Columns[residencia]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Transferir Archivo Contable a BD\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[residencia]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Transferir Archivo Contable a BD\Unión de todo.Inputs[Entrada de Unión de todo 2]"
+                  hasSideEffects="true"
+                  name="Entrada de Unión de todo 2">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Unión de todo.Inputs[Entrada de Unión de todo 2].Columns[IdCont]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="IdCont"
+                      lineageId="Package\Transferir Archivo Contable a BD\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[IdCont]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Transferir Archivo Contable a BD\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[IdCont]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Unión de todo.Inputs[Entrada de Unión de todo 2].Columns[idCli]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="idCli"
+                      lineageId="Package\Transferir Archivo Contable a BD\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[idCli]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Transferir Archivo Contable a BD\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[idCli]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Unión de todo.Inputs[Entrada de Unión de todo 2].Columns[MontoCuenta]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="MontoCuenta"
+                      lineageId="Package\Transferir Archivo Contable a BD\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[MontoCuenta]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Transferir Archivo Contable a BD\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[MontoCuenta]}</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Unión de todo.Inputs[Entrada de Unión de todo 2].Columns[fecha]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="fecha"
+                      lineageId="Package\Transferir Archivo Contable a BD\Origen de archivo plano.Outputs[Salida de origen de archivo plano].Columns[fecha]">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Id. de linaje de columna de salida"
+                          name="OutputColumnLineageID">#{Package\Transferir Archivo Contable a BD\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[fecha]}</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Transferir Archivo Contable a BD\Unión de todo.Inputs[Entrada de Unión de todo 3]"
+                  hasSideEffects="true"
+                  name="Entrada de Unión de todo 3">
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\Transferir Archivo Contable a BD\Unión de todo.Inputs[Entrada de Unión de todo 4]"
+                  dangling="true"
+                  hasSideEffects="true"
+                  name="Entrada de Unión de todo 4">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Transferir Archivo Contable a BD\Unión de todo.Outputs[Salida de Unión de todo 1]"
+                  name="Salida de Unión de todo 1">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[IdCli]"
+                      dataType="wstr"
+                      length="20"
+                      lineageId="Package\Transferir Archivo Contable a BD\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[IdCli]"
+                      name="IdCli" />
+                    <outputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[nombre]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Transferir Archivo Contable a BD\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[nombre]"
+                      name="nombre" />
+                    <outputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[correo]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Transferir Archivo Contable a BD\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[correo]"
+                      name="correo" />
+                    <outputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[telefono]"
+                      dataType="wstr"
+                      length="20"
+                      lineageId="Package\Transferir Archivo Contable a BD\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[telefono]"
+                      name="telefono" />
+                    <outputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[edad]"
+                      dataType="i4"
+                      lineageId="Package\Transferir Archivo Contable a BD\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[edad]"
+                      name="edad" />
+                    <outputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[residencia]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Transferir Archivo Contable a BD\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[residencia]"
+                      name="residencia" />
+                    <outputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[IdCont]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Transferir Archivo Contable a BD\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[IdCont]"
+                      name="IdCont" />
+                    <outputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[idCli]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Transferir Archivo Contable a BD\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[idCli]"
+                      name="idCli" />
+                    <outputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[MontoCuenta]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Transferir Archivo Contable a BD\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[MontoCuenta]"
+                      name="MontoCuenta" />
+                    <outputColumn
+                      refId="Package\Transferir Archivo Contable a BD\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[fecha]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Transferir Archivo Contable a BD\Unión de todo.Outputs[Salida de Unión de todo 1].Columns[fecha]"
+                      name="fecha" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Transferir Archivo Contable a BD.Paths[Salida de origen de ADO NET]"
+              endId="Package\Transferir Archivo Contable a BD\Unión de todo.Inputs[Entrada de Unión de todo 1]"
+              name="Salida de origen de ADO NET"
+              startId="Package\Transferir Archivo Contable a BD\Origen BD Clientes.Outputs[Salida de origen de ADO NET]" />
+            <path
+              refId="Package\Transferir Archivo Contable a BD.Paths[Salida de origen de ADO NET1]"
+              endId="Package\Transferir Archivo Contable a BD\Unión de todo.Inputs[Entrada de Unión de todo 3]"
+              name="Salida de origen de ADO NET"
+              startId="Package\Transferir Archivo Contable a BD\Contact Center.Outputs[Salida de origen de ADO NET]" />
+            <path
+              refId="Package\Transferir Archivo Contable a BD.Paths[Salida de origen de archivo plano]"
+              endId="Package\Transferir Archivo Contable a BD\Unión de todo.Inputs[Entrada de Unión de todo 2]"
+              name="Salida de origen de archivo plano"
+              startId="Package\Transferir Archivo Contable a BD\Origen de archivo plano.Outputs[Salida de origen de archivo plano]" />
+            <path
+              refId="Package\Transferir Archivo Contable a BD.Paths[Salida de Unión de todo 1]"
+              endId="Package\Transferir Archivo Contable a BD\Guarda Datos en BD.Inputs[Entrada de destino de ADO NET]"
+              name="Salida de Unión de todo 1"
+              startId="Package\Transferir Archivo Contable a BD\Unión de todo.Outputs[Salida de Unión de todo 1]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
+<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
+<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<Objects
+  Version="8">
+  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="230.4,41.6"
+          Id="Package\Transferir Archivo Contable a BD"
+          TopLeft="182.499992748102,78.8666672934426" />
+        <NodeLayout
+          Size="173.6,41.6"
+          Id="Package\Tarea Flujo de datos"
+          TopLeft="658.333307173518,84.9333340083228" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Transferir Archivo Contable a BD">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="188.8,41.6"
+          Id="Package\Transferir Archivo Contable a BD\Origen de archivo plano"
+          TopLeft="134.999994635582,61.5333338223563" />
+        <NodeLayout
+          Size="174.4,41.6"
+          Id="Package\Transferir Archivo Contable a BD\Guarda Datos en BD"
+          TopLeft="345.833319591152,295.533335682021" />
+        <NodeLayout
+          Size="167.2,41.6"
+          Id="Package\Transferir Archivo Contable a BD\Origen BD Clientes"
+          TopLeft="614.166642261877,58.9333338016934" />
+        <NodeLayout
+          Size="143.2,41.6"
+          Id="Package\Transferir Archivo Contable a BD\Unión de todo"
+          TopLeft="363.333318895764,182.86666811996" />
+        <EdgeLayout
+          Id="Package\Transferir Archivo Contable a BD.Paths[Salida de origen de ADO NET]"
+          TopLeft="697.766642261877,100.533333801693">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-240.299990032779,82.333334318267"
+              Start="0,0"
+              End="-240.299990032779,74.833334318267">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,44.8541442308391" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,44.8541442308391"
+                    Point2="0,48.8541442308391"
+                    Point3="-4,48.8541442308391" />
+                  <mssgle:LineSegment
+                    End="-236.299990032779,48.8541442308391" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-236.299990032779,48.8541442308391"
+                    Point2="-240.299990032779,48.8541442308391"
+                    Point3="-240.299990032779,52.8541442308391" />
+                  <mssgle:LineSegment
+                    End="-240.299990032779,74.833334318267" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Transferir Archivo Contable a BD.Paths[Salida de origen de archivo plano]"
+          TopLeft="229.399994635582,103.133333822356">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="182.999990926848,79.7333342976041"
+              Start="0,0"
+              End="182.999990926848,72.2333342976041">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,43.3113817876391" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,43.3113817876391"
+                    Point2="0,47.3113817876391"
+                    Point3="4,47.3113817876391" />
+                  <mssgle:LineSegment
+                    End="178.999990926848,47.3113817876391" />
+                  <mssgle:CubicBezierSegment
+                    Point1="178.999990926848,47.3113817876391"
+                    Point2="182.999990926848,47.3113817876391"
+                    Point3="182.999990926848,51.3113817876391" />
+                  <mssgle:LineSegment
+                    End="182.999990926848,72.2333342976041" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Transferir Archivo Contable a BD.Paths[Salida de Unión de todo 1]"
+          TopLeft="433.983319243458,224.46666811996">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,71.0666675620609"
+              Start="0,0"
+              End="0,63.5666675620609">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,63.5666675620609" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="148,41.6"
+          Id="Package\Transferir Archivo Contable a BD\Contact Center"
+          TopLeft="830.833300318984,62.4000004959107" />
+        <EdgeLayout
+          Id="Package\Transferir Archivo Contable a BD.Paths[Salida de origen de ADO NET1]"
+          TopLeft="904.833300318984,104.000000495911">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-436.09998142322,78.8666676240498"
+              Start="0,0"
+              End="-436.09998142322,71.3666676240498">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,47.6165758855755" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,47.6165758855755"
+                    Point2="0,51.6165758855755"
+                    Point3="-4,51.6165758855755" />
+                  <mssgle:LineSegment
+                    End="-432.09998142322,51.6165758855755" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-432.09998142322,51.6165758855755"
+                    Point2="-436.09998142322,51.6165758855755"
+                    Point3="-436.09998142322,55.6165758855755" />
+                  <mssgle:LineSegment
+                    End="-436.09998142322,71.3666676240498" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Transferir Archivo Contable a BD\Guarda Datos en BD">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Transferir Archivo Contable a BD\Origen BD Clientes">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
